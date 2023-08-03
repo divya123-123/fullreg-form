@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(248, 176, 248);">
+    <h1>Registration form</h1>
+    <form action="https://formspree.io/f/xaygqjea" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" required>
+       
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" required>
+      
+        <label for="Phonenumber">Phone Number</label>
+        <input type="tel" name="Phonenumber" required>
+        
+        <label for="gender">Gender</label>
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="others">Others</option>
+        </select>
+        
+        <label for="zipcode">Zipcode</label>
+        <input type="number" name="zipcode" required>
+        
+        <label for="about">About</label>
+        <input type="textarea" name="about" required>
+       
+        <div id="submit">
+            <input type="submit" value="Register">
+        </div>
+        <fieldset>
+            <legend>form details</legend>
+            <label for="name">Name</label>
+            <input type="text" name="Name">
+        </fieldset>
+        <label for="subject">choose a subject</label>
+        <select name="subject">
+        <optgroup label="Biology">
+            <option value="Botany">Botany</option>
+            <option value="Zoology">Zoology</option>
+        </optgroup>
+    
+        <optgroup label="CS">
+            <option value="PYTHON">PYTHON</option>
+            <option value="JAVA">JAVA</option>
+        </optgroup>
+    </select>
+</select>
+
+<label for="birthdaytime">Birthday (date and time):</label>
+<input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+<label for="FAV LANGUAGE">FAV LANGUAGE</label>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label>
+
+    </form>
+</body>
+</html>
